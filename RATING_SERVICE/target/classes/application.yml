@@ -1,0 +1,10 @@
+server:
+  port: 8083
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://microuser:tm2Z2UejynppRmCR@cluster0.fg8wfk4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: microservices
+  config:
+    import: configserver:http://localhost:8085
